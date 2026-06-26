@@ -17,6 +17,15 @@ El pipeline completo de ingeniería de datos, modelado predictivo y evaluación 
 </a>
 
 ---
+---
+
+## 📂 Origen de los Datos (Dataset)
+Los datos utilizados para el entrenamiento y evaluación de este modelo son de carácter público y provienen del portal oficial de datos abiertos de la Ciudad Autónoma de Buenos Aires (BA Data).
+
+Puedes consultar la fuente oficial y descargar el dataset crudo desde el siguiente enlace:
+🔗 **[Dataset de Delitos de la Ciudad de Buenos Aires](https://www.google.com/url?q=https%3A%2F%2Fdata.buenosaires.gob.ar%2Fde%2Fdataset%2Fdelitos%2Fresource%2F49f58c2e-21d7-4766-84e0-4bb753d28478)**
+
+---
 
 ## 📖 1. Resumen Ejecutivo del Proyecto
 Este proyecto aborda la problemática de la seguridad pública desde una perspectiva analítica y predictiva utilizando Ciencia de Datos. El objetivo principal es construir y evaluar un modelo de **Clasificación Binaria** capaz de estimar la probabilidad de que un delito ocurra en una **"Zona Caliente" (Hotspot)** en función de su contexto geográfico y variables temporales (mes, día, hora, estacionalidad).
