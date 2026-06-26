@@ -40,7 +40,7 @@ Uno de los mayores desafíos técnicos de este proyecto fue la **ausencia de una
 ## 📊 3. Análisis Exploratorio de Datos (EDA) e Ingeniería Espacial
 
 ### 📈 Gráfico 1: Análisis de Tendencias Temporales y Estacionalidad
-![Tendencias Temporales](img1.png)
+![Tendencias Temporales](img/img1.png)
 * **Qué representa:** Muestra el comportamiento del volumen de delitos a lo largo del tiempo agrupado por periodos mensuales y patrones cíclicos.
 * **Resultado / Insight:** Permite identificar picos estacionales de delincuencia ligados a variables de calendario (ej. fin de año, vacaciones o días festivos), lo que valida la inclusión de variables temporales enriquecidas como características predictivas clave para el algoritmo.
 
