@@ -71,7 +71,7 @@ Para garantizar la robustez del predictor, se evaluaron múltiples algoritmos (c
 * **Resultado / Insight:** El área bajo la curva (ROC-AUC) sirve como indicador global de la capacidad de separación de clases del modelo. Una curva que empuja fuertemente hacia la esquina superior izquierda ratifica que el algoritmo distingue con alta efectividad una zona segura de una de alto riesgo.
 
 ### 📊 Gráfico 6: Comparativa Detallada de Curvas ROC entre Modelos
-![Comparativa Curvas ROC](img/img4.jpg)
+![Comparativa Curvas ROC](img/img4.png)
 * **Qué representa:** Superposición de las curvas ROC de los diferentes modelos entrenados (ej. Regresión Logística frente a modelos complejos) para contrastar su poder predictivo en un solo plano.
 * **Resultado / Insight:** Facilita la toma de decisiones arquitectónicas. Permite evaluar si un incremento en la complejidad del modelo (como un modelo no lineal o ensamble) ofrece un beneficio estadísticamente significativo en el AUC respecto a una baseline lineal más simple y 외 interpretable.
 
