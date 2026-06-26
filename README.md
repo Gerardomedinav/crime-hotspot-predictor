@@ -45,7 +45,7 @@ Uno de los mayores desafíos técnicos de este proyecto fue la **ausencia de una
 * **Resultado / Insight:** Permite identificar picos estacionales de delincuencia ligados a variables de calendario (ej. fin de año, vacaciones o días festivos), lo que valida la inclusión de variables temporales enriquecidas como características predictivas clave para el algoritmo.
 
 ### 🗺️ Gráfico 2: Mapeo Base e Identificación del Espacio Geográfico
-![Mapeo Base](ML_1.png)
+![Mapeo Base](img/ML_1.png)
 * **Qué representa:** Cartografía e indexación de la región de estudio, delimitando las fronteras operativas y los puntos de registro donde se concentran los datos crudos de latitud y longitud.
 * **Resultado / Insight:** Funciona como el plano fundamental para la posterior discretización espacial. Permite corroborar visualmente la cobertura de los datos y asegurar que la distribución de los bloques geográficos cubra de manera uniforme el tejido urbano analizado.
 
@@ -56,32 +56,32 @@ Uno de los mayores desafíos técnicos de este proyecto fue la **ausencia de una
 Para garantizar la robustez del predictor, se evaluaron múltiples algoritmos (como Regresión Logística y ensambles basados en árboles) bajo una estricta estrategia de validación.
 
 ### 🔄 Gráfico 3: Estabilidad del Modelo mediante Validación Cruzada (Cross-Validation)
-![Validación Cruzada](img5.png)
+![Validación Cruzada](img/img5.png)
 * **Qué representa:** Evaluación del rendimiento métrico (Accuracy/Métricas de puntuación) distribuido a lo largo de los múltiples pliegues (*K-Folds*) durante el entrenamiento.
 * **Resultado / Insight:** La baja varianza observable entre los diferentes *folds* demuestra que el modelo cuenta con una excelente capacidad de generalización. Al no sufrir fluctuaciones drásticas, se confirma empíricamente el éxito de las técnicas utilizadas para prevenir el *overfitting* y el *data leakage*.
 
 ### 🎯 Gráfico 4: Matriz de Confusión y Análisis de Errores Operativos
-![Matriz de Confusión](img6.png)
+![Matriz de Confusión](img/img6.png)
 * **Qué representa:** Desglose matricial de las predicciones del modelo frente a la realidad del terreno, mostrando de forma directa los Verdaderos Positivos (VP), Verdaderos Negativos (VN), Falsos Positivos (FP, falsas alarmas) y Falsos Negativos (FN, zonas de riesgo no detectadas).
 * **Resultado / Insight:** Crucial para calibrar el modelo en contextos de seguridad pública. Permite ajustar el umbral de decisión para minimizar los Falsos Negativos, garantizando que el sistema no pase por alto una zona de alta peligrosidad inminente.
 
 ### 📉 Gráfico 5: Curva ROC (Receiver Operating Characteristic) General
-![Curva ROC General](curva%20ROC.png)
+![Curva ROC General](img/curva%20ROC.png)
 * **Qué representa:** Gráfico del ratio de Verdaderos Positivos frente al ratio de Falsos Positivos a diferentes umbrales de clasificación para el modelo óptimo.
 * **Resultado / Insight:** El área bajo la curva (ROC-AUC) sirve como indicador global de la capacidad de separación de clases del modelo. Una curva que empuja fuertemente hacia la esquina superior izquierda ratifica que el algoritmo distingue con alta efectividad una zona segura de una de alto riesgo.
 
 ### 📊 Gráfico 6: Comparativa Detallada de Curvas ROC entre Modelos
-![Comparativa Curvas ROC](img4.jpg)
+![Comparativa Curvas ROC](img/img4.jpg)
 * **Qué representa:** Superposición de las curvas ROC de los diferentes modelos entrenados (ej. Regresión Logística frente a modelos complejos) para contrastar su poder predictivo en un solo plano.
 * **Resultado / Insight:** Facilita la toma de decisiones arquitectónicas. Permite evaluar si un incremento en la complejidad del modelo (como un modelo no lineal o ensamble) ofrece un beneficio estadísticamente significativo en el AUC respecto a una baseline lineal más simple y 외 interpretable.
 
 ### 🥇 Gráfico 7: Comparativa Multimétrica de Modelos Predictivos
-![Comparativa de Métricas](img7.png)
+![Comparativa de Métricas](img/img7.png)
 * **Qué representa:** Gráfico de barras que compara de forma directa métricas clave de evaluación como *Accuracy*, *Precision*, *Recall* y *F1-Score* entre los algoritmos candidatos.
 * **Resultado / Insight:** Permite balancear el *trade-off* entre Precisión y Recall. En el despliegue de patrullas policiacas, un *Recall* elevado suele priorizarse para no omitir zonas calientes, y este gráfico consolida visualmente qué modelo logra el equilibrio operativo ideal.
 
 ### 🔍 Gráfico 8: Importancia de Características y Diagnóstico de Residuos
-![Importancia y Diagnóstico](img8.png)
+![Importancia y Diagnóstico](img/img8.png)
 * **Qué representa:** Análisis complementario de la relevancia de las variables del modelo (*Feature Importance*) o distribución detallada de los errores de predicción finales.
 * **Resultado / Insight:** Proporciona explicabilidad al modelo (*XAI*). Identifica qué factores (si las coordenadas espaciales o ciertas ventanas horarias nocturnas, por ejemplo) tienen mayor peso matemático al dictar si una zona se convertirá en un punto crítico de criminalidad.
 
